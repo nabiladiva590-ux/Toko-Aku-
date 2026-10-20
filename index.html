@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Toko Aku – Jasa Print Area UNS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: light;
+  --bg:#fdf1f5; --surface:#ffffff; --ink:#3a2a31; --muted:#7a6670;
+  --pink:#e8749c; --pink-deep:#c2406f; --pink-soft:#f6cfdc; --line:#efd3de; --on-pink:#ffffff;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --bg:#241820; --surface:#32232c; --ink:#f8e9ef; --muted:#c5aab6;
+    --pink:#ee86aa; --pink-deep:#f4a3c0; --pink-soft:#4a2a38; --line:#4d3140; --on-pink:#2a1520;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#241820; --surface:#32232c; --ink:#f8e9ef; --muted:#c5aab6;
+  --pink:#ee86aa; --pink-deep:#f4a3c0; --pink-soft:#4a2a38; --line:#4d3140; --on-pink:#2a1520;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Nunito',system-ui,sans-serif;line-height:1.55;font-size:16px}
+main{max-width:520px;margin:0 auto;padding:0 18px 40px}
+h1,h2{font-family:'DM Serif Display',Georgia,serif;font-weight:400;line-height:1.1;margin:0}
+h2{font-size:26px;margin-bottom:12px}
+section{margin-top:34px}
+.hero{padding-top:28px}
+.brand{font-weight:800;color:var(--pink-deep);font-size:15px}
+.hero h1{font-size:40px;margin:10px 0 12px}
+.hero p{margin:0 0 18px;color:var(--muted)}
+.big{display:flex;align-items:baseline;gap:8px;margin-bottom:14px}
+.big b{font-family:'DM Serif Display',Georgia,serif;font-size:56px;font-weight:400;color:var(--pink-deep);line-height:1}
+.big span{color:var(--muted)}
+.badge{display:inline-block;background:var(--pink-soft);color:var(--pink-deep);font-weight:800;border-radius:999px;padding:6px 14px;font-size:14px;margin-bottom:18px}
+.btn{display:block;width:100%;text-align:center;background:var(--pink-deep);color:var(--on-pink);font:800 17px 'Nunito',system-ui,sans-serif;border:0;border-radius:14px;padding:15px 18px;text-decoration:none;cursor:pointer}
+.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--pink);outline-offset:2px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:16px 18px}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;padding:10px 6px;border-bottom:1px solid var(--line)}
+th{font-weight:800;font-size:14px;color:var(--muted)}
+td.p,th.p{text-align:right;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.note{font-size:14px;color:var(--muted);margin:10px 0 0}
+ol{margin:0;padding-left:22px}
+ol li{margin-bottom:8px}
+label{display:block;font-weight:800;font-size:15px;margin:14px 0 6px}
+input,select,textarea{width:100%;font:600 16px 'Nunito',system-ui,sans-serif;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:12px}
+.opts{display:grid;gap:8px}
+.opts label{display:flex;gap:10px;align-items:center;font-weight:600;margin:0;background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:11px 12px}
+.opts input{width:auto;margin:0}
+.err{color:var(--pink-deep);font-weight:800;font-size:14px;min-height:20px;margin:10px 0 0}
+footer{margin-top:30px;font-size:14px;color:var(--muted);text-align:center}
+footer a{color:var(--pink-deep);font-weight:800}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <div class="brand">Toko Aku · Jasa Print Area UNS</div>
+    <h1>Print dari kos, hasilnya diantar ke kos.</h1>
+    <p>Kirim file lewat WhatsApp, kami print dan antar. Tidak perlu keluar kos, tidak perlu antre.</p>
+    <div class="big"><b>Rp 400</b><span>per lembar, print hitam-putih A4</span></div>
+    <div class="badge">Gratis ongkir area UNS</div>
+    <a class="btn" href="#minat">Saya berminat</a>
+  </header>
+
+  <section id="harga">
+    <h2>Daftar harga</h2>
+    <div class="card scroll">
+      <table>
+        <thead><tr><th>Print per lembar</th><th class="p">Kertas 70gsm</th><th class="p">Kertas 80gsm</th></tr></thead>
+        <tbody>
+          <tr><td>Hitam-putih</td><td class="p">Rp 400</td><td class="p">Rp 500</td></tr>
+          <tr><td>Warna</td><td class="p">Rp 500</td><td class="p">Rp 700</td></tr>
+          <tr><td>Gambar</td><td class="p">Rp 800</td><td class="p">Rp 1.000</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card scroll" style="margin-top:12px">
+      <table>
+        <thead><tr><th>Layanan tambahan</th><th class="p">Harga</th></tr></thead>
+        <tbody>
+          <tr><td>Print KRS</td><td class="p">Rp 1.500 (Get 2)</td></tr>
+          <tr><td>Scan</td><td class="p">Rp 1.500</td></tr>
+          <tr><td>Jilid mika</td><td class="p">Rp 3.000</td></tr>
+          <tr><td>Print sertifikat</td><td class="p">Rp 3.000</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Harga per lembar. Gratis ongkir untuk area UNS.</p>
+  </section>
+
+  <section>
+    <h2>Cara pesan</h2>
+    <div class="card">
+      <ol>
+        <li>Isi formulir di bawah, lalu kirim lewat WhatsApp.</li>
+        <li>Kirim file yang mau diprint.</li>
+        <li>Bayar, lalu tunggu hasilnya diantar ke kos.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="minat">
+    <h2>Saya berminat</h2>
+    <div class="card">
+      <p style="margin:0;color:var(--muted)">Ini versi uji coba. Jawabanmu dikirim ke WhatsApp Toko Aku sebagai masukan, bukan pesanan yang mengikat.</p>
+      <label for="nama">Nama</label>
+      <input id="nama" autocomplete="name" placeholder="Nama kamu">
+      <label for="kos">Area kos</label>
+      <input id="kos" placeholder="Misalnya: Kentingan, Jebres, Pabelan">
+      <label for="layanan">Layanan yang paling kamu butuhkan</label>
+      <select id="layanan">
+        <option value="">Pilih layanan</option>
+        <option>Print hitam-putih</option>
+        <option>Print warna</option>
+        <option>Print gambar/foto</option>
+        <option>Print KRS</option>
+        <option>Scan</option>
+        <option>Jilid mika</option>
+        <option>Print sertifikat</option>
+      </select>
+      <label>Apakah kamu akan memakai layanan ini?</label>
+      <div class="opts" id="minatOpts">
+        <label><input type="radio" name="minat" value="Ya, saya berminat"> Ya, saya berminat</label>
+        <label><input type="radio" name="minat" value="Mungkin, tergantung kebutuhan"> Mungkin, tergantung kebutuhan</label>
+        <label><input type="radio" name="minat" value="Belum berminat"> Belum berminat</label>
+      </div>
+      <label>Menurutmu harga di atas…</label>
+      <div class="opts">
+        <label><input type="radio" name="harga" value="Murah"> Murah</label>
+        <label><input type="radio" name="harga" value="Wajar"> Wajar</label>
+        <label><input type="radio" name="harga" value="Terlalu mahal"> Terlalu mahal</label>
+      </div>
+      <label for="wajar">Harga print hitam-putih per lembar yang menurutmu wajar (Rp)</label>
+      <input id="wajar" type="number" inputmode="numeric" min="0" placeholder="Contoh: 300">
+      <label for="masukan">Masukan untuk Toko Aku (boleh dikosongkan)</label>
+      <textarea id="masukan" rows="3" placeholder="Apa yang perlu diperbaiki atau ditambah?"></textarea>
+      <p class="err" id="err" role="alert"></p>
+      <button class="btn" id="kirim" type="button">Kirim lewat WhatsApp</button>
+    </div>
+  </section>
+
+  <footer>
+    Toko Aku · Instagram <a href="https://instagram.com/tokoaku__" target="_blank" rel="noopener">@tokoaku__</a><br>
+    WhatsApp <a href="https://wa.me/6281252782608" target="_blank" rel="noopener">0812-5278-2608</a>
+  </footer>
+</main>
+<script>
+(function(){
+  var NO = "6281252782608";
+  function val(name){var el=document.querySelector('input[name="'+name+'"]:checked');return el?el.value:"";}
+  document.getElementById("kirim").addEventListener("click",function(){
+    var nama=document.getElementById("nama").value.trim();
+    var kos=document.getElementById("kos").value.trim();
+    var layanan=document.getElementById("layanan").value;
+    var minat=val("minat"), harga=val("harga");
+    var wajar=document.getElementById("wajar").value.trim();
+    var masukan=document.getElementById("masukan").value.trim();
+    var err=document.getElementById("err");
+    if(!nama||!layanan||!minat||!harga){err.textContent="Lengkapi nama, layanan, minat, dan penilaian harga dulu.";return;}
+    err.textContent="";
+    var t="Halo Toko Aku, saya mengisi formulir minat.\n"+
+      "Nama: "+nama+"\n"+
+      "Area kos: "+(kos||"-")+"\n"+
+      "Layanan utama: "+layanan+"\n"+
+      "Minat: "+minat+"\n"+
+      "Penilaian harga: "+harga+"\n"+
+      "Harga hitam-putih yang wajar: "+(wajar?"Rp "+wajar:"-")+"\n"+
+      "Masukan: "+(masukan||"-");
+    window.open("https://wa.me/"+NO+"?text="+encodeURIComponent(t),"_blank");
+  });
+})();
+</script>
+</body>
+</html>
